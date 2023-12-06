@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="store.js"></script>
+    <title>SkoHubben</title>
+  </head>
+  <body>
+    <div class="header_produkt">
+      <div class="buttons">
+        <a href="mann.html">
+          <h1 class="knapper">Mann</h1>
+        </a>
+        <a href="dame.html">
+          <h1 class="knapper">Dame</h1>
+        </a>
+        <a href="barn.html">
+          <h1 class="knapper" id="j4_barn">Barn</h1>
+        </a>
+      </div>
+      <div id="logo_holder">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="bilder/SkoHubben-version1.png"
+            alt="skohubben logo"
+          />
+        </a>
+      </div>
+
+      <div id="shopping_holder">
+        <div id="language">
+          <img
+            id="usa"
+            onclick="translateFunc()"
+            src="bilder/Flag_of_the_United_States.svg"
+            alt="USA Flag"
+          />
+          <img
+            id="nor"
+            onclick="oversett()"
+            src="bilder/Flag_of_Norway.svg"
+            alt="Norway flag"
+          />
+        </div>
+        <a href="cart.html"
+          ><img id="shopping" src="bilder/bag.svg" alt="Shopping cart"
+        /></a>
+      </div>
+      <div id="cart_tall"></div>
+    </div>
+    <div class="packing_produkt">
+      <div class="skoShowcase">
+        <div class="img_holder">
+          <button class="" onclick="shoeLeft()">&#10094;</button>
+          <img
+            id="display_sko"
+            class="display_sko"
+            src="bilder/promo_sko1.png"
+            alt="bilde av sko"
+          />
+          <button onclick="shoeRight()">&#10095;</button>
+        </div>
+        <div class="skoknapp_holder">
+          <img
+            id="preview_sko1"
+            class="preview_sko"
+            src="bilder/sko1.jpg"
+            alt="bilde av sko"
+          />
+          <img
+            id="preview_sko2"
+            class="preview_sko"
+            src="bilder/pop.jpg"
+            alt="bilde av sko"
+          />
+          <img
+            id="preview_sko3"
+            class="preview_sko"
+            src="bilder/promo_sko1.png"
+            alt="bilde av sko"
+          />
+          <img
+            id="preview_sko4"
+            class="preview_sko"
+            src="bilder/promo_sko1.png"
+            alt="bilde av sko"
+          />
+          <img
+            id="preview_sko5"
+            class="preview_sko"
+            src="bilder/promo_sko1.png"
+            alt="bilde av sko"
+          />
+        </div>
+      </div>
+
+      <div class="purchase_settings">
+        <div class="sko_info">
+          <h1 class="sko_navn">Jordan 4 Oreo</h1>
+          <p class="sko_farge" id="colour">Farge: Grå</p>
+        </div>
+        <h1 class="sko_pris">Pris: 1234kr</h1>
+        <div class="dropdown_holder">
+          <select name="size" id="size">
+            <option value="velg">Velg Størrelse</option>
+            <option value="40">40 EU</option>
+            <option value="41">41 EU</option>
+            <option value="42">42 EU</option>
+            <option value="43">43 EU</option>
+            <option value="44">44 EU</option>
+            <option value="45">45 EU</option>
+            <option value="46">46 EU</option>
+          </select>
+        </div>
+        <button class="add_cart" id="addTo" onclick="buyShoes()">
+          Legg til handlekurv
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="store.js"></script>
+  <script src="translate.js"></script>
+</html>

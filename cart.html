@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="showCart()">
+      <h1>Nettbutikk</h1>
+
+    <!-- Denne knappen aktiver "showCart()" funksjonen i javascript, som da viser handlevognen -->
+    <!-- Denne knappen aktiverer "emptyCart funksjonen i javascript, og tømmer handlevognen" -->
+    <button onclick="emptyCart()">Empty Cart</button>
+
+
+    <p>Your cart:</p>
+
+    <!-- For at handlevognen din skal vises må den plasseres inn i et spesifikt html element. 
+        Her gir vi en <div> en id, slik at vi kan referere til den i JavaScripten -->
+    <div id="cart"></div>
+
+
+    <a href="index.html">Home</a>
+
+    <!-- For at HTML dokumentet og JavScript dokumentet skal snakke sammen 
+        må de linkes slik. Denne må være på alle HTML dokuementer som bruker JavaScript-->   
+</body>
+<script src="store.js"></script>
+</html>

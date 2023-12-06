@@ -1,0 +1,345 @@
+@font-face {
+  font-family: suisseintl;
+  src: url(fonter/SuisseIntl-Medium.ttf);
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  background-color: #F9F9F9;
+}
+a {
+  margin: 0%;
+  padding: 0%;
+  color: inherit;
+  text-decoration: none;
+}
+/* Header*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  position: fixed;
+  transition: all 0.5s;
+}
+.header_produkt {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #5a3f66 ;
+  height: 10vh;
+
+}
+.header_manual {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #5a3f66 ;
+}
+.header-scrolled {
+  background-color: #5a3f66 ;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+}
+.buttons {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  font-family: suisseintl;
+  text-decoration: none;
+  margin-left: 8vh;
+
+  width: 33vw;
+}
+.knapper {
+  margin-right: 3vw;
+}
+#logo_holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33vw;
+}
+.logo {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  width: 15vw;
+}
+#shopping {
+  margin: 0%;
+  padding: 0%;
+  height: 3.5vw;
+  margin-right: 5vw;
+  margin-top: vh;
+}
+#shopping_holder {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  width: 33vw;
+  justify-content: space-between;
+}
+.user{
+  height: 10px;
+
+}
+#cart_tall{
+  color: white;
+  font-size: 160%;
+  position: absolute;
+  right: 4.5vw;
+  top: 0%;
+  text-align: center;
+  background-color: red;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  display: none;
+}
+#language {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  width: 10vh;
+  height: 10vh;
+  margin-left: 5vw;
+}
+
+#usa {
+  cursor: pointer;
+  padding: 0.5vw;
+  margin-top: 0.2vw;
+  border-right: white solid 2px;
+  width: 9vh;
+  
+}
+#nor {
+  cursor: pointer;
+  padding: 0.5vw;
+  margin-top: 0.2vw;
+  width: 7vh;
+}
+.header_produkt{
+  height: 7vh;
+
+}
+#language{
+ height:7vh ; 
+}
+
+/* Slutt av Header */
+#t_buy{
+  cursor: pointer;
+}
+/* Modell navn salg */
+#sko_tekst {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 40%;
+  left: 5%;
+  z-index: 999;
+
+}
+#jordan4 {
+  display: flex;
+  width: 100%;
+}
+#sko_tekst h1 {
+  font-family: suisseintl;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+/* Mest populære sektion */
+
+.mest_pop{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #a1aab4;
+  width: 100%;
+}
+.mest_pop_bilder {
+ width: 10vw; 
+}
+.showcase{
+  margin-left: 0%;
+  padding: 0%;
+}
+#rek_tekst{
+  font-family: suisseintl;
+  margin: 0;
+  padding: 2vw;
+  background-color: aliceblue;
+  color: #383f47;
+}
+
+/* produkt side */
+.knapp_size{
+  background-color: #E19EFF; /* Green */
+  border: 1px;
+  border-color: rgb(47, 92, 132);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#size{
+  background-color: #875E99; /* Green */
+  border-radius: 3px;
+  border-color: rgb(47, 92, 132);
+  color: white;
+  padding: 15px 39px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.display_sko{
+  width: 35vw;
+}
+.preview_sko{
+  width: 7.5vw;
+}
+.add_cart{
+   background-color: #E19EFF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 3px;
+  cursor: pointer;
+ }
+
+/* produkt side  */
+
+.packing_produkt{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f3d8ff;
+  padding-top: 10vh;
+}
+.purchase_settings{
+  border: solid gray 1px;
+  background-color: #ffff;
+  padding: 2vw;  
+}
+#img_holder button{
+  margin-top: 10vh;
+}
+/* produktside slutt */
+
+/* footer */
+
+.footer {
+  width: 100%;
+  background-color: #383f47;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer p {
+  font-family: suisseintl;
+  display: flex;
+}
+.footer p.kontakt {
+  font-family: suisseintl;
+  font-weight: bold;
+}
+.footer a {
+  font-family: suisseintl;
+  font-weight: bold;
+  color: #7b9e87;
+}
+
+.footer a:link {
+  color: #7b9e87;
+}
+
+.footer a:visited {
+  color: #7b9e87;
+}
+
+.footer a:hover {
+  color: #469ae9;
+}
+
+.footer a:active {
+  color: #0000ff;
+}
+
+.kontaktdiv {
+  margin-left: 3%;
+  color: #7b9e87;
+}
+.kontaktdiv a {
+  font-size: 17px;
+}
+.kontakt {
+  font-size: 27px;
+}
+.les_mer{
+  margin-right: 5vh;
+
+}
+#manual_id  {
+  width: 100vw;
+  height: 100vh;
+} 
+.manual{
+  width: 100vw;
+}
+
+/* slutt av footer */
+
+/*About us*/
+
+#item_holder_about_us {
+display: flex;
+justify-content: space-around;
+margin-top: 20vw;
+width: 98vw;
+}
+/* skohuben stores */
+#bilde_aboutus1 {
+width: 40vw;
+}
+#flight_club_container {
+ width: 40vw;
+ margin-left: 3vw; 
+}
+#About_ustekst {
+ font-family: "Oswald", sans-serif;
+ font-weight: 300;
+}
+#Aboutustittel {
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+}
+/* skohubben specialty*/
+#ourhistorybilde {
+width: 40vw;
+}
+#ourhistorytittel {
+font-family: "Oswald", sans-serif;
+font-weight: lighter;
+}
+#top_pic_container {
+ width: 40vw;
+ margin-left: -8vw;
+ height: 80vh;
+}
+#Historytekst {
+ font-family: "Oswald", sans-serif;
+ font-weight: 300;
+}
+/* slutt av om skohubben */
