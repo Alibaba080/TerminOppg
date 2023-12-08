@@ -3,8 +3,8 @@ create database skohubdb;
 use skohubdb;
 
 create table brukere (
-    username varchar(40),
-    password varchar(40)
+    brukernavn varchar(40),
+    passord varchar(40)
 );
 
 --Hvis du bruker en annen MariaDB enn den som blir installert med XAMPP, må du kjøre denne i MariaDB

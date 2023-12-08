@@ -122,8 +122,9 @@
           <img
             class="mest_pop_bilder"
             src="bilder/promo_sko1.png"
-            alt="Jordan 4"
-          />
+            alt="Jordan 4
+            
+            />
           <h1 class="navn">Jordan 4</h1>
           <p class="modell">Oreo</p>
           <p class="pris">1245kr</p>
