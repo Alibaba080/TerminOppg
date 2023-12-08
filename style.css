@@ -81,10 +81,17 @@ a {
   width: 33vw;
   justify-content: space-between;
 }
-.user{
-  height: 10px;
-
+.user {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw; 
 }
+
+.user img {
+  height: 5vh; 
+  width: auto;
+}
+
 #cart_tall{
   color: white;
   font-size: 160%;

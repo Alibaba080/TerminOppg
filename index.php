@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>SkoHubben</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="buttons">
+        <a href="mann.html">
+          <h1 class="knapper" id="mann">Mann</h1>
+        </a>
+        <a href="dame.html">
+          <h1 class="knapper" id="dame">Dame</h1>
+        </a>
+        <a href="barn.html">
+          <h1 class="knapper" id="barn">Barn</h1>
+        </a>
+      </div>
+      <div id="logo_holder">
+        <a href="index.php">
+          <img
+            class="logo"
+            src="bilder/SkoHubben-version1.png"
+            alt="skohubben logo"
+          />
+        </a>
+      </div>
+
+      <div id="shopping_holder">
+        <div id="language">
+          <img
+            id="usa"
+            onclick="translateFunc()"
+            src="bilder/Flag_of_the_United_States.svg"
+            alt="USA Flag"
+          />
+          <img
+            id="nor"
+            onclick="oversett()"
+            src="bilder/Flag_of_Norway.svg"
+            alt="Norway flag"
+          />
+          <div class="user">
+            <a href="login.html">
+            <?php
+            session_start();
+                    // Check if the user is logged in
+                    if (isset($_SESSION['brukernavn'])) {
+                        echo '<p>Velkommen, ' . $_SESSION['brukernavn'] . '!</p>';
+                        // You can also provide a logout option here
+                        echo '<a href="logout.php">Logg ut</a>';
+                    } else {
+                        // If not logged in, show the login link
+                        echo '<a href="login.html"><img src="bilder/user.png" alt="user ikon"></a>';
+                    }
+                    ?>  
+          </a>
+          </div>
+        </div>
+        <a href="cart.html"
+          ><img id="shopping" src="bilder/bag.svg" alt="Shopping cart"
+        /></a>
+      </div>
+      <div id="cart_tall"></div>
+    </div>
+    <div id="sko_tekst">
+      <h1>Jordan 4 Oreo</h1>
+      <a id="kjop" href="jordan4.html">
+        <h1 id="t_buy">Kjøp Nå</h1>
+      </a>
+    </div>
+    <a href="jordan4.html"
+      ><img id="jordan4" src="bilder/sko31.jpg" alt="Jordan 4"
+    /></a>
+    <h1 id="rek_tekst">Mest Populære</h1>
+    <div class="mest_pop">
+      <a href="jordan4.html">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+    </div>
+    <div class="mest_pop">
+      <a href="jordan4.html">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="showcase">
+          <img
+            class="mest_pop_bilder"
+            src="bilder/promo_sko1.png"
+            alt="Jordan 4"
+          />
+          <h1 class="navn">Jordan 4</h1>
+          <p class="modell">Oreo</p>
+          <p class="pris">1245kr</p>
+        </div>
+      </a>
+    </div>
+    <!--About us-->
+
+    <div id="placeholder_About_us">
+      <div id="item_holder_about_us">
+        <div id="flight_club_container">
+          <img src="bilder/skohubben_butikk.jpg" id="bilde_aboutus1" alt="" />
+          <h1 id="Aboutustittel">SKOHUBBEN STORES</h1>
+          <p id="About_ustekst">
+            Skohubben is an innovative company that has made a significant
+            impact on the footwear industry through its groundbreaking products
+            and steadfast dedication to style, quality, and customer
+            satisfaction. With a deep-rooted history and a forward-looking
+            mindset, Skohubben has established itself as a trailblazer,
+            consistently pushing the limits of what can be achieved in the realm
+            of shoes. This descriptive text explores the fundamental principles,
+            distinctive offerings, and notable accomplishments that position
+            Skohubben as a prominent leader in the global footwear market.
+          </p>
+        </div>
+        <div id="top_pic_container">
+          <img src="bilder/skohubben_ute.jpg" id="ourhistorybilde" alt="" />
+          <h1 id="ourhistorytittel">SKOHUBBEN SPECIALITY</h1>
+          <p id="Historytekst">
+            Welcome to Skohubben, the go-to company for all your running shoe
+            needs. With a passion for fitness and a dedication to quality,
+            Skohubben is here to revolutionize your running experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="kontaktdiv">
+        <p class="kontakt" id="kontakt">Kontakt Meg:</p>
+        <p>Tel: +4740841878</p>
+        <a href="mailto:alsabhawiali@gmail.com">alsabhawiali@gmail.com</a>
+      </div>
+      <div class="les_mer">
+        <a href="eldre_arbeid/index.php"
+          ><h1 id="les_her">Les mer om oss</h1></a
+        >
+        <a href="manual.html"><p>Manual</p></a>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
